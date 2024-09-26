@@ -6,7 +6,7 @@ while True:
     if city == "exit":
         print("thankyou for using")
         break
-    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=ae3ed4fc4dd73616a06c3328fb89048b&units=metric"
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=""
     r = requests.get(url)
     dic = json.loads(r.text)
     print(f"the weather of {city} is: {dic["main"]["temp"]}")
